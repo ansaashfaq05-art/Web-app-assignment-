@@ -4,26 +4,297 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .header-section{
+    background-color: #D7F5DC;
+    width: 1000px;
+    height: 600px;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+     margin-inline: 20px;
+    align-items: center;
+     padding-inline: 20px;
+}
+ ul{
+     display: flex;
+     list-style: none;
+     align-items: center;
+     gap: 30px;
+}
+#btn-1{
+    border-radius: 10px;
+    border-color: green;
+    background-color: #D7F5DC;
+    padding: 10px;
+    color: black;
+}
+#btn-2{
+    border-radius: 10px;
+    color: white;
+    background-color: green;
+    padding: 10px;
+}
+.ansa{
+    display: flex;
+}
+#img-1{
+    width: 500px;
+    height: 450px;
+    margin-right: 100px;
+}
+#hero-section{
+    padding: 40px;
+}
+#btn-3{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+#logo{
+    display: flex;
+    background-color: white;
+    gap: 150px;
+    height: 30px;
+}
+#hero-text span{
+      color: orange;
+}
+.container{
+        display: flex;
+        gap: 50px;
+       margin: 50px;
+       margin-right: 70px;
+}
+#image-1, #img-2, #img-3{
+    height: 80px;
+    width: 80px;
+}
+.card-first, .card-second, .third-card{
+    margin: 30px;
+}
+.container-1{
+    margin: 50px;
+}
+#text{
+    color: green;
+}
+.container-1{
+    margin: 50px;
+    margin-right: 200px;
+}
+#btn-4, #btn-5, #btn-6{
+    border: none;
+    background-color: white;
+}
+.container-2{
+    display: flex;
+    text-align: center;
+    gap: 70px;
+    padding: 80px;
+    background-color: #D7F5DC;
+    height: 150px;
+    width: 1100px;
+    padding-top: 30px;
+
+}
+#img1, #img2, #img3, #img4{
+    height: 50px;
+    width: 50px;
+}
+#card-1, #card-2, #card-3, #card-4{
+    margin: 40px;
+}
+#text-1, #text-2, #text-3, #text-4{
+    color: green;
+}
+.container-3{
+    display: flex;
+    gap: 40px;
+    margin: 30px;
+}
+#font{
+    font-weight: lighter;
+    color: rgb(188, 186, 186);
+}
+.container-4{
+    text-align: center;
+
+}
+#form{
+   padding: 10px;
+   width: 350px;
+
+}
+.container-5{
+    background-color: #00CA72;
+    padding: 20px;
+    display: flex;
+    gap: 250px;
+}
+    </style>
 </head>
 <body>
-    <div style="border: 1px solid white; padding: 30px; margin-left: 450px; margin-right: 450px;">
-        <h1>Efficient HVAC <br>Solutions</h1>
-    <img src="./efficient-exterior-cooling-systems-modern-industrial-commercial-buildings-largescale-hvac-solution-view-showcases-378482085.webp" alt="image no 1" width="300" height="300">
-    <p>A leading HVAC construction company known for advanced technology and energy efficiency in cooling heating systems. we prioritize client comfort while cutting down on utility costs </p>
-    <a href="./index.html">Contact</a>  
- </div>
-    <h1>Our Expertise</h1>
-    <p>State-of-the-Art Solutions</p>
-    <div style="border: 20px; padding: 20px; color: black; background-color: rgb(133, 127, 127);">
-        <h4">24/7 Emergency HVAC Services</h4>
-        <p>Energy-Efficient System</p>
+    <!-- Navbar Section -->
+    <div class="header-section">
+        <header>
+        <nav>
+            <h2>DesignAgency <span></span></h2>
+            <ul>
+                <li>Services</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <button id="btn-1">Login</button>
+                <button id="btn-2">Register</button>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <div class="ansa">
+        <div id="hero-section">
+        <h1>Increase Your <br>Customers Loyalty and Satisfactions </h1>
+        <p>We help businesses like yours earn more customers, <br>standout from competitors, and make more money</p>
+        <button id="btn-3">Get Started</button>
+        </div>
+        <div>
+            <img id="img-1" src="./Group 38.png" alt="image 1">
+        </div>
     </div>
-    <br>
-    <div style="border: 20px; padding: 20px; color: black; background-color: rgb(133, 127, 127);">
-        <h4>Indoor Air Quality</h4>
-        <p>Optimizing Air Circulation</p>
+        <header id="logo">
+        <img src="./logos_google.png" alt="">
+        <img src="./Trello-logo-blue 1.png" alt="">
+        <img src="./logos_monday.png" alt="">
+        <img src="./Notion.png" alt="">
+        <img src="./Slack.png" alt="">
+    </header>
+    </div>
+    <!-- Section-2 -->
+    <div class="container-1">
+        <h6 id="text">WHAT WE DO</h6>
+        <h2>We provide the Perfect Solutions <br>to your business growth</h2>
+        <div class="container">
+            <div class="card-first">
+                <img id="image-1" src="./Activity.png" alt="">
+                <h4>Grow your Business</h4>
+                <p>We help identify the best way to improve your business</p>
+                <button id="btn-4">Learn more -></button>
+            </div>
+            <div class="card-second">
+                <img id="img-2" src="./Heart.png" alt="">
+                <h4>Improve brand loyalty</h4>
+                <p>We help identify the best way to  improve your brand loyalty</p>
+                <button id="btn-5">Learn more -></button>
+            </div>
+            <div class="third-card">
+                <img id="img-3" src="./Work.png" alt="">
+                <h4>Improve your Business Model</h4>
+                <p>We help identify the best way to  improve your business model</p>
+                <button id="btn-6">Learn more -></button>
+            </div>
+         </div>
+</div>
+<!-- Section-3 -->
+ <div class="container-2">
+    <div id="card-1">
+        <img id="img1" src="./project-plan.png" alt="">
+        <p>Completed Project</p>
+        <h1 id="text-1">100 +</h1>
+</div>
+    <div id="card-2">
+        <img id="img2" src="./rating (1).png" alt="">
+        <p>Customers Satisfactions</p>
+        <h1 id="text-2">20 %</h1>
+    </div>
+    <div id="card-3">
+        <img id="img3" src="./raise.png" alt="">
+        <p>Raised By Clients</p>
+        <h1 id="text-3">$ 10M</h1>
+
+    </div>
+    <div id="card-4">
+        <img id="img4" src="./timeline 2.png" alt="">
+        <p>Years in Business</p>
+        <h1 id="text-4">2 yrs</h1>
+
+    </div>
+ </div>
+ <div>
+     <h6 id="text">OUR PORTFOLIO</h6>
+        <h2>We provide the Perfect Solutions <br>to your business growth</h2>
+        <div class="container-3">
+            <div>
+                <img src="./Screenshot 2022-05-06 at 10.35.png" alt="">
+                <h4>Digital Marketing Agency Website</h4>
+                <p>This is a website for clients who want to achieve their <br> goals and meet their users need while also increase their reach. Across all the platforms. <br> This is a website rebrand</p>
+                <br>
+                <br>
+                <br>
+                <img src="./Screenshot 2022-05-14 at 11.17.png" alt="">
+                 <h4>Digital Marketing Agency Website</h4>
+                <p>This is a website for clients who want to achieve their <br> goals and meet their users need while also increase their reach. Across all the platforms. <br> This is a website rebrand</p>
+            </div>
+            <div>
+                <img src="./Screenshot 2022-05-14 at 11.15.png" alt="">
+                 <h4>Digital Marketing Agency Website</h4>
+                <p>This is a website for clients who want to achieve their <br> goals and meet their users need while also increase their reach. Across all the platforms. <br> This is a website rebrand</p>
+                <br>
+                <br>
+                <br>
+                <img src="./Screenshot 2022-05-06 at 10.35.png" alt="">
+                 <h4>Digital Marketing Agency Website</h4>
+                <p>This is a website for clients who want to achieve their <br> goals and meet their users need while also increase their reach. Across all the platforms. <br> This is a website rebrand</p>
+            </div>
+        </div>
+
+ </div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <div class="container-4">
+    <h6 id="text">SUBSCRIBE</h6>
+    <h2>Subscribe To Get The Latest <br> News About Us</h2>
+    <h6 id="font">Please Drop Your Email To Get Daily Update About What We Do </h6>
+    <form>
+        <input id="form" type="text" placeholder="Enter Your Email Adress">
+    </form>
+ </div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <div class="container-5">
+    <div>
+        <h1>WEB LOGO</h1>
+        <p>Some footer text about the <br> Agency. Just a little description to <br> help people understand you better</p>
+        <img src="./Group 32.png" alt="">
+        <img src="./Group 33.png" alt="">
+        <img src="./Group 34 (1).png" alt="">
+        <img src="./Frame 20095.png" alt="">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h5>Copyright Design Agency 2022</h5>
+    </div>
+    <div>
+        <h5>Quick Links</h5>
+        <p>Services</p>
+        <p>Portfolio</p>
+        <p>About Us</p>
+        <p>Contact Us</p>
+    </div>
+    <div>
+        <h5>Address</h5>
+        <p>Design Agency Head Office.</p>
+        <p>Airport Road</p>
+        <p>United Arab Emirates</p>
+    </div>
  </div>
 
-    
 </body>
 </html>
