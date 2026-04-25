@@ -1,79 +1,161 @@
-operator
-arithmetic (+ , _  ,* ,%)
-assignment  (*= , +=, -=, %=)
-comparison ( >=,<=)
- Operands 
+                            // PROGRAM NO 1
 
-text + variable
-const username = 'Alishba'
-console.log('Hello' , username , 123 , 'welcome')
-let first_no = 2
-let second_no = 4
-let result ;
-result = second_no+first_no
-result = second_no-first_no
-result = second_no%first_no
-result = second_no*first_no
-result = second_no/first_no
-console.log( `Hello ${username}`)
-console.log(first_no+second_no)
-console.log(first_no-second_no)
-console.log(first_no*second_no)
-console.log(first_no%second_no)
-console.log(first_no/second_no)
+// Item prices and quantities
+let price1 = 1000;
+let qty1 = 2;
 
-operations
-increment , decrement
-let first_no = 9
-first_no++
-console.log(first_no)   
-first_no = first_no + 1 
-console.log(first_no)
-first_no--
-console.log(first_no)
-console.log(`first no is ${first_no} + 1`)
-console.log(`first no is` , first_no + 1)
+let price2 = 500;
+let qty2 = 3;
 
-let text1 = "John";
-let text2 = "Doe";
-console.log(text1 , text2)
-let text3 = text1 + "" + text2;
-console.log(text3)
+let price3 = 200;
+let qty3 = 1;
+let total1 = price1 * qty1;   // ×
+let total2 = price2 * qty2;   // ×
+let total3 = price3 * qty3;   // ×
+let totalPrice = total1 + total2 + total3;   
 
-let text4 = "What a very ";
-text4 += "nice day";
-console.log(text4)
+console.log("Total Price:", totalPrice);
 
-let value1 = 5;
-let value2 = 10;
-console.log(value1 > value2);
-console.log(value2 < value1);
-console.log(value1 <= value2);
-console.log(value2 >= value1);
-console.log(value1 == value2);
-console.log(value1 != value2);
+                              //  PROGRAM NO 2
 
-// true, false,-> boolean data type
-console.log(value1 > value2 && value2 < value1);
-console.log(value1 > value2 || value1 < value2); 
-let value3 = value1 > value2 && value2 < value1
-console.log(!value3)
+let price = 1000; 
+let discount = price * 0.10;
+
+let finalPrice = price - discount;
+
+console.log("Original Price:", price);
+console.log("Discount:", discount);
+console.log("Final Price:", finalPrice);
+
+                            // PROGRAM NO 3
+
+let price = 2000;  
+let tax = price * 0.18;
+let totalBill = price + tax;
+
+console.log("Price:", price);
+console.log("Tax (18%):", tax);
+console.log("Total Bill:", totalBill);            
+
+                          // PROGRAM NO 4
+
+let weight = 60;  
+let height = 1.7;  
+
+let bmi = weight / (height * height);
+console.log("Your BMI is:", bmi);                          
+ 
+                          //  PROGRAM NO 5
+
+let salary = 50000;  
+let taxRate = 0.10;
+let tax = salary * taxRate;
+let finalSalary = salary - tax;
+
+console.log("Salary:", salary);
+console.log("Tax:", tax);
+console.log("Final Salary:", finalSalary);
+
+                        // PROGRAM NO 6
+
+let r1 = 4;
+let r2 = 5;
+let r3 = 3;
+let r4 = 4;
+let r5 = 5;
+
+let average = (r1 + r2 + r3 + r4 + r5) / 5;
+
+console.log("Average Rating:", average); 
+
+                    //  PROGRAM NO 7
+
+let orderAmount = 1500;
+let deliveryCharge = 200 - (orderAmount / 1000) * 100;
+let totalBill = orderAmount + deliveryCharge;
+
+console.log("Order Amount:", orderAmount);
+console.log("Delivery Charge:", deliveryCharge);
+console.log("Total Bill:", totalBill);  
+
+                    // PROGRAM NO 8
+
+let principal = 10000;  
+let rate = 5;          
+let time = 2;         
+let simpleInterest = (principal * rate * time) / 100;
+
+console.log("Simple Interest:", simpleInterest);                    
+
+                      // PROGRAM NO 9
+
+let balance = 5000;    
+let withdraw = 1500;    
+let remainingBalance = balance - withdraw;
+
+console.log("Initial Balance:", balance);
+console.log("Withdraw:", withdraw);
+console.log("Remaining Balance:", remainingBalance);     
+
+                          //  PROGRAM NO 10
+
+let totalMinutes = 135;
+let hours = totalMinutes / 60;
+let remainingMinutes = totalMinutes % 60;
+
+console.log("Hours:", hours);
+console.log("Remaining Minutes:", remainingMinutes);   
 
 
-conditional statements
-let x = 5;
-let y = 10;
+                        // IF-ELSE PROGRAMS
 
-if(x == y){
-    console.log( "x and y are not equal")
+                      //  PROGRAM NO 1
+
+let username = "admin";
+let password = "1234"; 
+
+let inputUsername = prompt("Enter username:");
+let inputPassword = prompt("Enter password:");
+
+// check login
+if (inputUsername === username && inputPassword === password) {
+  console.log("Login Successful!");
+} else {
+  console.log("Invalid username or password");
+}                      
+                      
+                                //  PROGRAM NO 2
+
+let age = 20;
+
+if (age >= 18) {
+  console.log("Access Granted. Welcome to the website!");
+} else {
+  console.log("Access Denied. You must be 18 or older.");
+}                                
+
+                            // PROGRAM NO 3
+
+let orderAmount = +prompt("Enter your order amount:");
+
+let discount = 0;
+
+if (orderAmount > 200) {
+  discount = orderAmount * 0.20;  
+} else if (orderAmount > 100) {
+  discount = orderAmount * 0.10;   
+} else {
+  discount = 0; 
 }
-// if(x > y){
-//     console.log("x is greater than y")
-// }
-else if(x > y){
-    console.log("x is greater than y")
-}
-if, else
+
+
+let finalPrice = orderAmount - discount;
+
+console.log("Order Amount:", orderAmount);
+console.log("Discount:", discount);
+console.log("Final Price:", finalPrice);                            
+
+                            // PROGRAM NO 4
 
 let result = 50
 if (result >= 80){
@@ -82,6 +164,28 @@ if (result >= 80){
 else if (result >= 60){
     console.log("b grade")
 }
+else if (result >= 50){
+    console.log("c grade")
+}
 else {
     console.log("you have failed the exam")
 }
+
+
+                      // PROGRAM NO 5
+
+let weather = prompt("Enter weather (hot, cold, rainy):");
+weather = weather.toLowerCase();
+
+if (weather === "hot") {
+  console.log("Weather is hot: Stay hydrated and avoid sun exposure.");
+} 
+else if (weather === "cold") {
+  console.log("Weather is cold: Wear warm clothes.");
+} 
+else if (weather === "rainy") {
+  console.log("Weather is rainy: Carry an umbrella.");
+} 
+else {
+  console.log("Invalid input. Please enter hot, cold, or rainy.");
+}                      
